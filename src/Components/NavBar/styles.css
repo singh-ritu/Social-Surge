@@ -1,22 +1,38 @@
 .navBar {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   width: 100%;
   background-color: #f8f9fa;
 }
+.project-name {
+  width: 500px;
+}
+.heading {
+  font-size: 30px;
+  margin-left: 20%;
+}
+.middle-container {
+  width: 60%;
+}
 .input-container {
+  /* width: 60%; */
+  border: 1px solid transparent;
+  border-radius: 32px;
+  background-color: #f1edf8;
   width: 80%;
-  background-color: red;
-  /* margin-left: 20% */
+  padding: 0.3rem 1rem;
 }
 .input {
-  border: 1px solid transparent;
+  border: 1px;
   border-radius: 16px;
-  background-color: #f1edf5;
-  margin-top: 20px;
-
-  padding: 0.3rem 0rem;
-  /* text-align: left; */
+  background-color: #f1edf8;
+  width: 80%;
+  padding: 0.3rem 1rem;
+}
+.right-container {
+  display: flex;
+  margin-right: 10%;
 }
 .create-btn {
   border: 1px solid transparent;

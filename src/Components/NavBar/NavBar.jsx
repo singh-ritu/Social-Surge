@@ -13,18 +13,21 @@ function NavBar() {
   }, []);
   return (
     <div className="navBar">
-      <div style={{ marginTop: "20px", width: "500px" }}>
-        <h3>Social-Surge</h3>
+      <div className="project-name">
+        <span className="heading">Social-Surge</span>
       </div>
-      <div className="input-container">
-        <input
-          type="text"
-          placeholder="search for inspirartions, creations and projects "
-          className="input"
-          ref={inputRef}
-        />
+      <div className="middle-container">
+        <div className="input-container">
+          <img src="search.svg" />
+          <input
+            type="text"
+            placeholder="search for inspirartions, creations and projects "
+            className="input"
+            ref={inputRef}
+          />
+        </div>
       </div>
-      <div style={{ display: "flex" }}>
+      <div className="right-container">
         <button className="create-btn">Create</button>
         <Avatar />
       </div>

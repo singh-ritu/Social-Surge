@@ -37,13 +37,8 @@
 .new-post {
   border: 1px solid transparent;
   border-radius: 24px;
-  background-color: #8a6aef;
+  background-color: #5731d3;
   color: #f1edf5;
-  padding: 2px 32px;
+  padding: 0.5rem 3.5rem;
   margin: 1rem;
-  /* border: 1px solid transparent;
-  border-radius: 8px;
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa; */
 }
