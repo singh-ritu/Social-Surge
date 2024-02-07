@@ -3,7 +3,7 @@ import Avatar from "../NavBar/Avatar";
 import { useState } from "react";
 import "./styles.css";
 
-function Dashboard() {
+function Sidebar() {
   return (
     <div className="sidebar">
       <div className="user-info">
@@ -54,4 +54,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Sidebar;

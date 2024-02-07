@@ -21,7 +21,7 @@ function NavBar() {
           <img src="search.svg" />
           <input
             type="text"
-            placeholder="search for inspirartions, creations and projects "
+            placeholder="Search for inspirartions, creations and projects "
             className="input"
             ref={inputRef}
           />

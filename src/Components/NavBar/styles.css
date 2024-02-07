@@ -21,14 +21,17 @@
   border-radius: 32px;
   background-color: #f1edf8;
   width: 80%;
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 1rem;
 }
 .input {
   border: 1px;
   border-radius: 16px;
   background-color: #f1edf8;
   width: 80%;
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 1rem;
+}
+.input:focus {
+  outline: none;
 }
 .right-container {
   display: flex;
