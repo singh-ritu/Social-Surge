@@ -1,6 +1,7 @@
 import React from "react";
-import Avatar from "./Avatar";
+import Avatar from "../Avatar";
 import "./styles.css";
+import Button from "../Button";
 import { useEffect, useRef } from "react";
 
 function NavBar() {
@@ -28,7 +29,9 @@ function NavBar() {
         </div>
       </div>
       <div className="right-container">
-        <button className="create-btn">Create</button>
+        <div className="create-btn">
+          <Button buttonName="Create" color="#8a6aef" />
+        </div>
         <Avatar />
       </div>
     </div>

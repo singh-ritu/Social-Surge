@@ -1,6 +1,7 @@
 import React from "react";
-import Avatar from "../NavBar/Avatar";
+import Avatar from "../Avatar";
 import { useState } from "react";
+import Button from "../Button";
 import "./styles.css";
 
 function Sidebar() {
@@ -47,8 +48,8 @@ function Sidebar() {
           <b>Settings</b>
         </div>
       </div>
-      <div>
-        <button className="new-post">Create Post</button>
+      <div className="new-post">
+        <Button buttonName="Create Post" />
       </div>
     </div>
   );

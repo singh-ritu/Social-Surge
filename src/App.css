@@ -1,0 +1,9 @@
+.top-container {
+  background-color: #f1edf5;
+}
+.bottom-container {
+  display: flex;
+}
+.left-container {
+  width: 200px;
+}

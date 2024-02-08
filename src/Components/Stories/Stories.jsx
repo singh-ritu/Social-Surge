@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "../NavBar/Avatar";
+import Avatar from "../Avatar";
 import "./styles.css";
 
 function Stories() {
