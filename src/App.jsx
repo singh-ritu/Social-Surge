@@ -1,12 +1,13 @@
 import { useState } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import Sidebar from "./Components/Sidebar/Sidebar";
-import Stories from "./Components/Stories/Stories";
+import Stories from "./Components/MiddleContainer/Stories";
+import Messages from "./Components/RightContainer/Messages";
 import "./App.css";
 function App() {
   return (
     <>
-      <div className="top-container">
+      <div className="parent-container">
         <div>
           <NavBar />
         </div>
@@ -15,11 +16,15 @@ function App() {
             <Sidebar />
           </div>
           <div className="middle-container">
-            <div>
+            <div style={{ height: "100%" }}>
               <Stories />
             </div>
           </div>
-          <div className="right-container"></div>
+          <div className="right-container">
+            <div>
+              <Messages />
+            </div>
+          </div>
         </div>
       </div>
     </>

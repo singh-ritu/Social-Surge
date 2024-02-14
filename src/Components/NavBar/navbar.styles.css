@@ -33,7 +33,7 @@
 .input:focus {
   outline: none;
 }
-.right-container {
+.right-nav-container {
   display: flex;
   margin-right: 10%;
 }
@@ -43,5 +43,6 @@
   background-color: #8a6aef;
   color: #f1edf5;
   padding: 2px 32px; */
+  width: 100px;
   margin: 1rem;
 }

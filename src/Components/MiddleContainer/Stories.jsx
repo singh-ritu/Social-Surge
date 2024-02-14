@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "../Avatar";
-import "./styles.css";
+import "./stories.styles.css";
 
 function Stories() {
   return (

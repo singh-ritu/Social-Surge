@@ -1,9 +1,19 @@
-.top-container {
+.parent-container {
   background-color: #f1edf5;
 }
 .bottom-container {
   display: flex;
+  padding: 2rem 6rem;
 }
 .left-container {
-  width: 200px;
+  min-width: 200px;
+  flex: 1;
+}
+.middle-container {
+  flex: 3;
+  margin: 0 20px;
+}
+.right-container {
+  flex: 2;
+  max-width: 300px;
 }

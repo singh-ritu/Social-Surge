@@ -1,0 +1,37 @@
+.messages {
+  border: 0px;
+  border-radius: 16px;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.user-search {
+  display: flex;
+  border: 0;
+  border-radius: 16px;
+  background-color: #f1edf8;
+  padding: 2px;
+}
+.user-search:focus {
+  outline: none;
+}
+.text {
+  font-size: 1rem;
+}
+.message-category {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.slider {
+  border-bottom: 4px solid #f1edf8;
+  margin-bottom: 10px;
+}
+.user {
+  display: flex;
+}

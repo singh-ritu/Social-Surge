@@ -1,6 +1,9 @@
 import React from "react";
 import Avatar from "../Avatar";
-import "./styles.css";
+import "./navbar.styles.css";
+import girl from "../../assets/Girl.jpg";
+import search from "../../assets/search.svg";
+
 import Button from "../Button";
 import { useEffect, useRef } from "react";
 
@@ -19,7 +22,7 @@ function NavBar() {
       </div>
       <div className="middle-container">
         <div className="input-container">
-          <img src="search.svg" />
+          <img src={search} />
           <input
             type="text"
             placeholder="Search for inspirartions, creations and projects "
@@ -28,11 +31,11 @@ function NavBar() {
           />
         </div>
       </div>
-      <div className="right-container">
+      <div className="right-nav-container">
         <div className="create-btn">
           <Button buttonName="Create" color="#8a6aef" />
         </div>
-        <Avatar />
+        <Avatar image={girl} />
       </div>
     </div>
   );

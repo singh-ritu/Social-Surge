@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-function Avatar() {
+function Avatar({ image }) {
   return (
     <div>
-      <img src="Girl.jpg" className="avatar" />
+      <img src={image} className="avatar" />
     </div>
   );
 }
