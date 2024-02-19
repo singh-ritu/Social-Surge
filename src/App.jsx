@@ -3,7 +3,9 @@ import NavBar from "./Components/NavBar/NavBar";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Stories from "./Components/MiddleContainer/Stories";
 import Messages from "./Components/RightContainer/Messages";
+import SearchBar from "./Components/MiddleContainer/SearchBar";
 import "./App.css";
+import Requests from "./Components/RightContainer/Requests";
 function App() {
   return (
     <>
@@ -18,11 +20,18 @@ function App() {
           <div className="middle-container">
             <div style={{ height: "100%" }}>
               <Stories />
+              <div style={{ marginTop: "20px" }}>
+                <SearchBar />
+              </div>
             </div>
           </div>
           <div className="right-container">
             <div>
               <Messages />
+            </div>
+            <sapn>Requests</sapn>
+            <div>
+              <Requests />
             </div>
           </div>
         </div>

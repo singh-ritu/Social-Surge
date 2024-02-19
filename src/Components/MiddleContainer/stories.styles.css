@@ -1,7 +1,20 @@
+.stories-container {
+  display: flex;
+}
 .story {
-  /* border: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 200px;
+  position: relative;
   border-radius: 16px;
-  height: 100%;
-  width: 100%;
-  background-image: url("selfie.jpg"); */
+  margin: 0 4px;
+}
+.username {
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  left: 8px;
+  flex-wrap: wrap;
 }

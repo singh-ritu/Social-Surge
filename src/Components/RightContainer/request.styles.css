@@ -1,0 +1,17 @@
+.request {
+  display: flex;
+}
+.request-user {
+  display: flex;
+  flex-direction: column;
+}
+.accept-btn {
+  display: flex;
+  width: 200px;
+}
+.request-container {
+  background-color: #f8f9fa;
+  border: 0;
+  border-radius: 16px;
+  padding: 10px;
+}

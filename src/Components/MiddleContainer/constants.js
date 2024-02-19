@@ -6,7 +6,7 @@ import story5 from "../../assets/story5.jpg";
 import story6 from "../../assets/story6.jpg";
 import party from "../../assets/party.jpg";
 import birthday from "../../assets/birthday.jpg";
-import friends from "../../assets/party.jpg";
+import friends from "../../assets/friends.jpg";
 import college from "../../assets/college.jpg";
 import exams from "../../assets/exams.jpg";
 import wedding from "../../assets/wedding.jpg";

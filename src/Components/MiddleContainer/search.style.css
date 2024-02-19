@@ -1,0 +1,15 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0;
+  border-radius: 32px;
+  background-color: #f8f9fa;
+  padding-right: 10px;
+}
+.search-bar:focus {
+  outline: none;
+}
+.post-btn {
+  width: 100px;
+}
