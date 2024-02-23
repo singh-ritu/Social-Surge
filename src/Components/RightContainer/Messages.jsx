@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./messages.styles.css";
 import Avatar from "../Avatar";
 import search from "../../assets/search.svg";
@@ -10,7 +10,56 @@ import story6 from "../../assets/story6.jpg";
 import girjesh from "../../assets/girjesh.jpg";
 import shobbit from "../../assets/shobbit.jpg";
 
+const items = [
+  {
+    avatar: story6,
+    username: "Shashank_Gaur",
+    text: "+4 Messages",
+  },
+  {
+    avatar: story2,
+    username: "Vaidehi",
+    text: "Love u babe",
+  },
+  {
+    avatar: story4,
+    username: "Mahek",
+    text: "+2 Messages",
+  },
+  {
+    avatar: story3,
+    username: "Ehsaas_nagar",
+    text: "Hey Bro!",
+  },
+  {
+    avatar: girjesh,
+    username: "igirjesh",
+    text: "+3 Messages",
+  },
+  {
+    avatar: shobbit,
+    username: "shobbit",
+    text: "Funny",
+  },
+];
+
 function Messages() {
+  const [input, setInput] = useState([]);
+  const [users, setUsers] = useState(items);
+  const handleChange = (e) => {
+    setInput(e.target.value);
+
+    if (e.target.value === "") {
+      setUsers(items);
+      return;
+    }
+
+    const filteredArr = users.filter((user) => {
+      return user.username.toLowerCase().includes(e.target.value);
+    });
+    setUsers(filteredArr);
+  };
+
   return (
     <div className="messages">
       <div className="title">
@@ -19,7 +68,13 @@ function Messages() {
       </div>
       <div className="user-search">
         <img src={search} alt="no-img" />
-        <input type="text" placeholder="Search" className="user-search" />
+        <input
+          value={input}
+          onChange={handleChange}
+          type="text"
+          placeholder="Search"
+          className="user-search"
+        />
       </div>
       <div className="message-category">
         <b className="text">Primary</b>
@@ -27,49 +82,18 @@ function Messages() {
         <b className="text">Request(7)</b>
       </div>
       <div className="slider"></div>
-      <div className="users-list">
-        <div className="user">
-          <Avatar image={story6} />
-          <div>
-            <b className="text">Shashank_Gaur</b>
-            <p>+4messages</p>
+      <div>
+        {users.map((value, index) => (
+          <div className="user-list" key={index}>
+            <div className="user">
+              <Avatar image={value.avatar} />
+              <div>
+                <b>{value.username}</b>
+                <p>{value.text}</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="user">
-          <Avatar image={story2} />
-          <div>
-            <b>Vaidehi</b>
-            <p>Love u babe</p>
-          </div>
-        </div>
-        <div className="user">
-          <Avatar image={story4} />
-          <div>
-            <b>Mahek</b>
-            <p>+2messages</p>
-          </div>
-        </div>
-        <div className="user">
-          <Avatar image={story3} />
-          <div>
-            <b>Ehssas_nagar</b>
-            <p>Hey Bro!</p>
-          </div>
-        </div>
-        <div className="user">
-          <Avatar image={girjesh} />
-          <div>
-            <b>igirjesh</b>
-            <p>+3messages</p>
-          </div>
-        </div>
-        <div className="user">
-          <Avatar image={shobbit} />
-          <div>
-            <b>shobbit</b>
-            <p>funny</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
