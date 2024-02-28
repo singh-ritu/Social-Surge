@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "../Avatar";
-import { useState } from "react";
+import { useContext } from "react";
 import Button from "../Button";
 import "./sidebar.styles.css";
 import girl from "../../assets/Girl.jpg";
@@ -12,8 +12,52 @@ import bookmark from "../../assets/bookmark.svg";
 import activity from "../../assets/activity.svg";
 import feather from "../../assets/feather.svg";
 import settings from "../../assets/settings.svg";
+import { ThemeContext } from "../../Theme";
 
 function Sidebar() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  const sibebarItems = [
+    {
+      logo: home,
+      logoName: "Home",
+    },
+    {
+      logo: search,
+      logoName: "Explore",
+    },
+    {
+      logo: bell,
+      logoName: "Notification",
+    },
+    {
+      logo: messageSquare,
+      logoName: "Messages",
+    },
+    {
+      logo: bookmark,
+      logoName: "Bookmarks",
+    },
+    {
+      logo: activity,
+      logoName: "Analytics",
+    },
+    {
+      logo: feather,
+      logoName: "Theme",
+    },
+    {
+      logo: settings,
+      logoName: "Settings",
+    },
+  ];
+
+  const handleItemClicked = (logoName) => {
+    if (logoName === "Theme") {
+      toggleTheme();
+      console.log({ theme });
+    }
+  };
   return (
     <div className="sidebar">
       <div className="user-info">
@@ -24,38 +68,22 @@ function Sidebar() {
         </div>
       </div>
       <div className="options">
-        <div className="item ">
-          <img src={home} style={{ marginRight: "10px" }} />
-          <b>Home</b>
-        </div>
-        <div className="item">
-          <img src={search} style={{ marginRight: "10px" }} />
-          <b>Explore</b>
-        </div>
-        <div className="item">
-          <img src={bell} style={{ marginRight: "10px" }} />
-          <b>Notification</b>
-        </div>
-        <div className="item">
-          <img src={messageSquare} style={{ marginRight: "10px" }} />
-          <b>Message</b>
-        </div>
-        <div className="item">
-          <img src={bookmark} style={{ marginRight: "10px" }} />
-          <b>BookMarks</b>
-        </div>
-        <div className="item">
-          <img src={activity} style={{ marginRight: "10px" }} />
-          <b>Analytics</b>
-        </div>
-        <div className="item">
-          <img src={feather} style={{ marginRight: "10px" }} />
-          <b>Theme</b>
-        </div>
-        <div className="item">
-          <img src={settings} style={{ marginRight: "10px" }} />
-          <b>Settings</b>
-        </div>
+        {sibebarItems.map((option, index) => (
+          <div
+            key={index}
+            className="item"
+            onClick={() => {
+              handleItemClicked(option.logoName);
+            }}
+          >
+            <img
+              src={option.logo}
+              alt="no logo"
+              style={{ marginRight: "10px" }}
+            />
+            <b>{option.logoName}</b>
+          </div>
+        ))}
       </div>
       <div className="new-post">
         <Button buttonName="Create Post" />

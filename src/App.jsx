@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Stories from "./Components/MiddleContainer/Stories";
@@ -6,10 +6,14 @@ import Messages from "./Components/RightContainer/Messages";
 import SearchBar from "./Components/MiddleContainer/SearchBar";
 import "./App.css";
 import Requests from "./Components/RightContainer/Requests";
+
+import { ThemeContext } from "./Theme";
 function App() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
-      <div className="parent-container">
+      <div className={`parent-container ${theme}`}>
         <div>
           <NavBar />
         </div>

@@ -1,5 +1,27 @@
+:root {
+  --primary-bg-dark: rgb(42, 36, 68);
+  --primary-bg-light: rgb(255, 255, 255);
+
+  --text-light: black;
+  --text-dark: white;
+
+  --secondary-bg-dark: rgb(32, 26, 51);
+  --secondary-bg-light: rgb(241, 237, 246);
+}
+
+.light-theme {
+  --bg-primary: var(--primary-bg-light);
+  --bg-secondary: var(--secondary-bg-light);
+  --text: var(--text-light);
+}
+.dark-theme {
+  --bg-primary: var(--primary-bg-dark);
+  --bg-secondary: var(--secondary-bg-dark);
+  --text: var(--text-dark);
+}
+
 .parent-container {
-  background-color: #f1edf5;
+  background-color: var(--bg-secondary);
 }
 .bottom-container {
   display: flex;

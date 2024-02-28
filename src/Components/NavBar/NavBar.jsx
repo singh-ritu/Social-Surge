@@ -26,7 +26,7 @@ function NavBar() {
           <input
             type="text"
             placeholder="Search for inspirartions, creations and projects "
-            className="input"
+            className="input "
             ref={inputRef}
           />
         </div>

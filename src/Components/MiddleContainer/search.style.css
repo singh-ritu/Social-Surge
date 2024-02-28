@@ -4,8 +4,9 @@
   justify-content: space-between;
   border: 0;
   border-radius: 32px;
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
   padding-right: 10px;
+  color: var(--text);
 }
 .search-bar:focus {
   outline: none;

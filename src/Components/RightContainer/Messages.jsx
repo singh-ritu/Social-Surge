@@ -10,40 +10,39 @@ import story6 from "../../assets/story6.jpg";
 import girjesh from "../../assets/girjesh.jpg";
 import shobbit from "../../assets/shobbit.jpg";
 
-const items = [
-  {
-    avatar: story6,
-    username: "Shashank_Gaur",
-    text: "+4 Messages",
-  },
-  {
-    avatar: story2,
-    username: "Vaidehi",
-    text: "Love u babe",
-  },
-  {
-    avatar: story4,
-    username: "Mahek",
-    text: "+2 Messages",
-  },
-  {
-    avatar: story3,
-    username: "Ehsaas_nagar",
-    text: "Hey Bro!",
-  },
-  {
-    avatar: girjesh,
-    username: "igirjesh",
-    text: "+3 Messages",
-  },
-  {
-    avatar: shobbit,
-    username: "shobbit",
-    text: "Funny",
-  },
-];
-
 function Messages() {
+  const items = [
+    {
+      avatar: story6,
+      username: "Shashank_Gaur",
+      text: "+4 Messages",
+    },
+    {
+      avatar: story2,
+      username: "Vaidehi",
+      text: "Love u babe",
+    },
+    {
+      avatar: story4,
+      username: "Mahek",
+      text: "+2 Messages",
+    },
+    {
+      avatar: story3,
+      username: "Ehsaas_nagar",
+      text: "Hey Bro!",
+    },
+    {
+      avatar: girjesh,
+      username: "igirjesh",
+      text: "+3 Messages",
+    },
+    {
+      avatar: shobbit,
+      username: "shobbit",
+      text: "Funny",
+    },
+  ];
   const [input, setInput] = useState([]);
   const [users, setUsers] = useState(items);
   const handleChange = (e) => {

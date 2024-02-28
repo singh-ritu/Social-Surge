@@ -4,13 +4,14 @@
 .request-user {
   display: flex;
   flex-direction: column;
+  color: var(--text);
 }
 .accept-btn {
   display: flex;
   width: 200px;
 }
 .request-container {
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
   border: 0;
   border-radius: 16px;
   padding: 10px;
