@@ -1,0 +1,25 @@
+.content-div {
+  position: absolute;
+  top: 30%;
+  left: 110%;
+  min-width: 300px;
+  z-index: 100;
+  border-radius: 16px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgb(184, 176, 176);
+}
+.details {
+  display: flex;
+}
+.comment-details {
+  display: flex;
+  margin: 0;
+  font-size: small;
+}
+.time {
+  font-size: small;
+}

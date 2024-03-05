@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "../Avatar";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import Button from "../Button";
 import "./sidebar.styles.css";
 import girl from "../../assets/Girl.jpg";
@@ -12,10 +12,12 @@ import bookmark from "../../assets/bookmark.svg";
 import activity from "../../assets/activity.svg";
 import feather from "../../assets/feather.svg";
 import settings from "../../assets/settings.svg";
+import Modal from "./Modal";
 import { ThemeContext } from "../../Theme";
 
-function Sidebar() {
+function Sidebar({ handleClick }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const [visible, setVisible] = useState(false);
 
   const sibebarItems = [
     {
@@ -55,7 +57,20 @@ function Sidebar() {
   const handleItemClicked = (logoName) => {
     if (logoName === "Theme") {
       toggleTheme();
+      setVisible(false);
       console.log({ theme });
+    } else if (logoName === "Notification") {
+      setVisible(!visible);
+    } else if (logoName === "Messages") {
+      handleClick();
+      // useEffect(() => {
+      //   const timeoutId = setTimeout(() => {
+      //     setIsMessagesClicked(false);
+      //   }, 2000);
+      //   return () => clearTimeout(timeoutId);
+      // }, []);
+    } else {
+      setVisible(false);
     }
   };
   return (
@@ -88,6 +103,7 @@ function Sidebar() {
       <div className="new-post">
         <Button buttonName="Create Post" />
       </div>
+      <div>{visible && <Modal visible={visible} />}</div>
     </div>
   );
 }

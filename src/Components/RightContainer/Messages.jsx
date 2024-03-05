@@ -10,7 +10,7 @@ import story6 from "../../assets/story6.jpg";
 import girjesh from "../../assets/girjesh.jpg";
 import shobbit from "../../assets/shobbit.jpg";
 
-function Messages() {
+function Messages({ isMessagesClicked }) {
   const items = [
     {
       avatar: story6,
@@ -60,7 +60,13 @@ function Messages() {
   };
 
   return (
-    <div className="messages">
+    <div
+      className="messages"
+      style={{
+        boxShadow: isMessagesClicked ? "0 0 10px rgb(167, 109, 226)" : "0 0 0",
+        transition: "color 0.3s ease",
+      }}
+    >
       <div className="title">
         <b>Messages</b>
         <img src={edit}></img>

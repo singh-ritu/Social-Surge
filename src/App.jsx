@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Stories from "./Components/MiddleContainer/Stories";
@@ -6,10 +6,16 @@ import Messages from "./Components/RightContainer/Messages";
 import SearchBar from "./Components/MiddleContainer/SearchBar";
 import "./App.css";
 import Requests from "./Components/RightContainer/Requests";
-
 import { ThemeContext } from "./Theme";
 function App() {
   const { theme } = useContext(ThemeContext);
+  const [isMessagesClicked, setIsMessagesClicked] = useState(false);
+  const handleClick = () => {
+    setIsMessagesClicked(!isMessagesClicked);
+    setTimeout(() => {
+      setIsMessagesClicked(false);
+    }, 2000);
+  };
 
   return (
     <>
@@ -19,7 +25,7 @@ function App() {
         </div>
         <div className="bottom-container">
           <div className="left-container">
-            <Sidebar />
+            <Sidebar handleClick={handleClick} />
           </div>
           <div className="middle-container">
             <div style={{ height: "100%" }}>
@@ -31,7 +37,7 @@ function App() {
           </div>
           <div className="right-container">
             <div>
-              <Messages />
+              <Messages isMessagesClicked={isMessagesClicked} />
             </div>
             <span>Requests</span>
             <div>
