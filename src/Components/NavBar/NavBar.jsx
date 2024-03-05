@@ -35,7 +35,9 @@ function NavBar() {
         <div className="create-btn">
           <Button buttonName="Create" color="#8a6aef" />
         </div>
-        <Avatar image={girl} />
+        <div style={{ marginTop: "10px" }}>
+          <Avatar image={girl} />
+        </div>
       </div>
     </div>
   );

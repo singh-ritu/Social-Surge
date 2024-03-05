@@ -10,7 +10,7 @@
   background-color: var(--bg-primary);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px rgb(184, 176, 176);
+  box-shadow: 0 0 10px rgb(167, 128, 205);
 }
 .details {
   display: flex;
@@ -19,7 +19,9 @@
   display: flex;
   margin: 0;
   font-size: small;
+  color: var(--text);
 }
 .time {
   font-size: small;
+  color: var(--text);
 }

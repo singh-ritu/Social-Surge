@@ -1,0 +1,28 @@
+.post-card {
+  height: 500px;
+  width: 500px;
+  background-color: var(--bg-primary);
+  margin-top: 10px;
+  border-radius: 16px;
+  padding: 10px;
+}
+.upper-part {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+}
+.post-user {
+  display: flex;
+}
+.post-img {
+  height: 500px;
+  width: 500px;
+  border-radius: 8px;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+.likes {
+  display: flex;
+}

@@ -5,6 +5,7 @@ import Stories from "./Components/MiddleContainer/Stories";
 import Messages from "./Components/RightContainer/Messages";
 import SearchBar from "./Components/MiddleContainer/SearchBar";
 import "./App.css";
+import PostCard from "./Components/MiddleContainer/PostCard";
 import Requests from "./Components/RightContainer/Requests";
 import { ThemeContext } from "./Theme";
 function App() {
@@ -32,6 +33,9 @@ function App() {
               <Stories />
               <div style={{ marginTop: "20px" }}>
                 <SearchBar />
+              </div>
+              <div>
+                <PostCard />
               </div>
             </div>
           </div>

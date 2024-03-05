@@ -63,12 +63,7 @@ function Sidebar({ handleClick }) {
       setVisible(!visible);
     } else if (logoName === "Messages") {
       handleClick();
-      // useEffect(() => {
-      //   const timeoutId = setTimeout(() => {
-      //     setIsMessagesClicked(false);
-      //   }, 2000);
-      //   return () => clearTimeout(timeoutId);
-      // }, []);
+      setVisible(false);
     } else {
       setVisible(false);
     }

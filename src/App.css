@@ -22,6 +22,7 @@
 
 .parent-container {
   background-color: var(--bg-secondary);
+  height: 100%;
 }
 .bottom-container {
   display: flex;
