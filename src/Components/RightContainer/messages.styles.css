@@ -16,7 +16,7 @@
   border: 0;
   border-radius: 16px;
   background-color: var(--bg-secondary);
-  padding: 2px;
+  padding: 2px 4px;
   color: var(--text);
 }
 .user-search:focus {

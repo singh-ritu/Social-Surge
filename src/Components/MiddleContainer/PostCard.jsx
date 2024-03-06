@@ -44,10 +44,10 @@ function PostCard() {
           <div className="lower-part">
             <div>
               <div className="likes">
-                <p style={{ margin: 0 }}>liked by</p>
-                <b>{card.otherUser}</b>
-                <p style={{ margin: 0 }}>and</p>
-                <b>{card.count} </b>
+                <p style={{ margin: 0, marginRight: "4px" }}>liked by</p>
+                <b style={{ marginRight: "4px" }}>{card.otherUser}</b>
+                <p style={{ margin: 0, marginRight: "4px" }}>and</p>
+                <b style={{ marginRight: "4px" }}>{card.count} </b>
               </div>
               <div>{card.caption}</div>
               <p>{card.comments} </p>
@@ -61,28 +61,3 @@ function PostCard() {
 }
 
 export default PostCard;
-{
-  /* 
-      
-      <div className="lower-part">
-        <div>
-          <div className="likes">
-            <p style={{ margin: 0 }}>liked by</p>
-            <b>igirjesh</b>
-            <p style={{ margin: 0 }}>and</p>
-            <b>233 others</b>
-          </div>
-          <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-            dignissimos architecto molestiae, nisi amet quos? Temporibus commodi
-            magnam necessitatibus modi! Ab omnis sint nobis hic ratione, quaerat
-            vero similique earum. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Culpa reiciendis molestias nesciunt repellendus
-            mollitia, impedit ut aliquam alias veritatis ad, magnam facilis
-            exercitationem temporibus provident! Nobis sit quasi architecto
-            inventore?
-          </div>
-          <p>view all 456 comments </p>
-        </div>
-      </div> */
-}
