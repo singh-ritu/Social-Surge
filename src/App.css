@@ -27,6 +27,7 @@
 .bottom-container {
   display: flex;
   padding: 2rem 8rem;
+  padding: 100px;
 }
 .left-container {
   min-width: 200px;

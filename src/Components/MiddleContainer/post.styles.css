@@ -1,25 +1,29 @@
 .post-card {
-  height: 500px;
-  width: 500px;
   background-color: var(--bg-primary);
   margin-top: 10px;
   border-radius: 16px;
   padding: 10px;
+  font-size: medium;
+  cursor: pointer;
 }
 .upper-part {
   display: flex;
-  margin: 10px;
   justify-content: space-between;
+}
+.lower-part {
+  color: var(--text);
 }
 .post-user {
   display: flex;
+  color: var(--text);
 }
 .post-img {
   height: 500px;
-  width: 500px;
+  width: 770px;
   border-radius: 8px;
+  margin: 2px;
 }
-.icons {
+.icon {
   display: flex;
   justify-content: space-between;
 }
