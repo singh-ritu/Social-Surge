@@ -86,11 +86,18 @@ function Sidebar({ handleClick }) {
               handleItemClicked(option.logoName);
             }}
           >
-            <img
-              src={option.logo}
-              alt="no logo"
-              style={{ marginRight: "10px" }}
-            />
+            <div className="icon-container">
+              {(option.logoName === "Notification" ||
+                option.logoName === "Messages") && (
+                <div className="custom-badge">10</div>
+              )}
+              <img
+                src={option.logo}
+                alt="no logo"
+                style={{ marginRight: "10px" }}
+              />
+            </div>
+
             <b>{option.logoName}</b>
           </div>
         ))}

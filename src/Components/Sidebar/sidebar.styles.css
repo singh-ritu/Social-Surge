@@ -38,3 +38,17 @@
 .new-post {
   margin: 1rem;
 }
+.icon-container {
+  position: relative;
+}
+.custom-badge {
+  background-color: red;
+  position: absolute;
+  color: white;
+  padding: 2px;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  margin-top: -10px;
+  border-radius: 24px;
+}
