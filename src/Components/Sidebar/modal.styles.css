@@ -1,9 +1,9 @@
 .content-div {
   position: absolute;
-  top: 30%;
-  left: 110%;
+  top: 14rem;
+  left: 14rem;
   min-width: 300px;
-  z-index: 100;
+  z-index: 50;
   border-radius: 16px;
   padding: 4px;
   cursor: pointer;
