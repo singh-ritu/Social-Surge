@@ -4,6 +4,9 @@ import "./stories.styles.css";
 import { stories } from "./constants";
 
 function Stories() {
+  const style = {
+    border: "3px solid #5731d3",
+  };
   return (
     <div className="stories-container">
       {stories.map((story, index) => (
@@ -12,7 +15,8 @@ function Stories() {
           className="story"
           style={{ backgroundImage: `url(${story.photo})` }}
         >
-          <Avatar image={story.avatar} />
+          <Avatar image={story.avatar} border={style} />
+
           <span className="username">{story.username}</span>
         </div>
       ))}

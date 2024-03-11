@@ -18,3 +18,8 @@
   left: 8px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 426px) {
+  .username {
+    font-size: smaller;
+  }
+}

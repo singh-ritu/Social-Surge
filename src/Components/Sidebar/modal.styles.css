@@ -25,3 +25,16 @@
   font-size: small;
   color: var(--text);
 }
+@media screen and (max-width: 1024px) {
+  .content-div {
+    top: 8rem;
+    left: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-div {
+    top: 8rem;
+    right: 6rem;
+    left: revert-layer;
+  }
+}

@@ -20,7 +20,7 @@ function NavBar() {
       <div className="project-name">
         <span className="heading">Social-Surge</span>
       </div>
-      <div className="middle-container">
+      <div className="middle-nav-container">
         <div className="input-container">
           <img src={search} />
           <input

@@ -98,7 +98,7 @@ function Sidebar({ handleClick }) {
               />
             </div>
 
-            <b>{option.logoName}</b>
+            <b className="name">{option.logoName}</b>
           </div>
         ))}
       </div>

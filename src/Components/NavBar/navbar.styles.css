@@ -15,7 +15,7 @@
   margin-left: 20%;
   color: var(--text);
 }
-.middle-container {
+.middle-nav-container {
   width: 60%;
 }
 .input-container {
@@ -42,11 +42,22 @@
   margin-right: 10%;
 }
 .create-btn {
-  /* border: 1px solid transparent;
-  border-radius: 24px;
-  background-color: #8a6aef;
-  color: #f1edf5;
-  padding: 2px 32px; */
   width: 100px;
   margin: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .middle-nav-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .heading {
+    margin-left: 0;
+  }
+  .project-name {
+    width: initial;
+  }
+  .right-nav-container {
+    margin-right: 0;
+  }
 }
